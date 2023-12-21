@@ -24,7 +24,7 @@ def submit_ioc(api_key, ioc_data):
         print(response.text)
 
 def fetch_analysis(api_key):
-    url = 'https://172.62.130.151/api/job/_search'
+    url = 'https://IP_CORTEX/api/job/_search'
     headers = {
         'Authorization': f'Bearer {api_key}',
         'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ ioc_data = {
     "tlp": int(input("Enter TLP (Traffic Light Protocol) level (default is 0): ") or 0),
 }
 
-api_key = "**API**"
+api_key = "**API_CORTEX**"
 
 # Submit IOC for analysis
 submit_ioc(api_key, ioc_data)
