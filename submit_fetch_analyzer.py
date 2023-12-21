@@ -58,7 +58,7 @@ def fetch_analysis(api_key):
 
         url_detail = f'https://IP_CORTEX/api/job/{job_id}/report'
 
-        # Use the json parameter to automatically set the Content-Type header to 'application/json'
+        
         response_detail = requests.get(url_detail, headers=headers, verify=False)
 
         if response_detail.status_code == 200:
